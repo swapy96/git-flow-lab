@@ -1,35 +1,42 @@
 const poems = [
-    {
-        author: "Cece",
-        poem: "Roses are red \n Violets are blue \n Sunflowers are yellow \n I bet you were expecting something romantic but no -- these are just gardening facts.",
-        image: "sunflower.jpeg",
-    },
-    {
-        author: "Anvit",
-        poem: "Roses are red \n Pizza sauce is too \n I ordered a large \n None of it is for you ",
-        image: "pizza.jpeg",
-    },
-    {
-        author: "Ernie",
-        poem: "Roses are red \n Violets are blue \n Jerry Seinfeld is considering \n Making Bee Movie 2",
-        image: "bee.jpeg",
-    },
+  {
+    author: "Cece",
+    poem: "Roses are red \n Violets are blue \n Sunflowers are yellow \n I bet you were expecting something romantic but no -- these are just gardening facts.",
+    image: "sunflower.jpeg",
+  },
+  {
+    author: "Anvit",
+    poem: "Roses are red \n Pizza sauce is too \n I ordered a large \n None of it is for you ",
+    image: "pizza.jpeg",
+  },
+  {
+    author: "Ernie",
+    poem: "Roses are red \n Violets are blue \n Jerry Seinfeld is considering \n Making Bee Movie 2",
+    image: "bee.jpeg",
+  },
 
-    {
-        author: "Manjot",
-        poem: "This is a poem",
-        image: "this-is-a-poem.jpg",
-    },
-
-    // YOUR CODE HERE: Add an object containing two key value pairs: author and poem. Set the author property as equal to a string with your first name. Set the poem property as equal to a short "roses are red" poem. Use the new line character as in the example when you would like a line break.
+  {
+    author: "Manjot",
+    poem: "This is a poem",
+    image: "this-is-a-poem.jpg",
+  },
+  {
+    author: "Swapnil",
+    poem: "Roses are yello \n sky is blue \n who cares what i write \n Making Bee Movie 2",
+    image: "download.png",
+  },
+  {
+    author: "KHOI",
+    poem: "1+1 = 2",
+  },
 ];
 
 let displayPoems = (array) => {
-    let html = "";
-    let poemDiv = document.getElementById("poems");
+  let html = "";
+  let poemDiv = document.getElementById("poems");
 
-    poemArray = array.forEach((poem) => {
-        html += `
+  poemArray = array.forEach((poem) => {
+    html += `
     <div class="poem">
         <img class="poem__image" src="./assets/${poem.image}"/>
         <div class="poem__author">
@@ -40,9 +47,9 @@ let displayPoems = (array) => {
         </div>
     </div>
     `;
-    });
+  });
 
-    poemDiv.innerHTML = html;
+  poemDiv.innerHTML = html;
 };
 
 displayPoems(poems);
